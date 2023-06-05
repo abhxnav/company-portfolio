@@ -14,7 +14,7 @@ const Navbar = () => {
             {link.title}
           </Link>
         ))}
-        <button className="p-1.5 border-none bg-purple-500 text-white cursor-pointer rounded-md">
+        <button className="p-1.5 border-none bg-accent text-text_dark font-medium cursor-pointer rounded-md">
           Logout
         </button>
       </div>
