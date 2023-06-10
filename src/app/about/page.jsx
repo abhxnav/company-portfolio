@@ -34,7 +34,7 @@ const About = () => {
               {para.para}
             </p>
           ))}
-          <Button url="/contact" text="Contact" />
+          <Button url="/contact" text="Contact Us" />
         </div>
       </div>
     </div>
