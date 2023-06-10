@@ -9,12 +9,12 @@ const Contact = () => {
         Ping Us!
       </h1>
       <div className="flex items-center gap-24">
-        <div className="flex-1 relative h-128">
+        <div className="flex-1 relative h-128 scale-125 mr-10">
           <Image
             src={banner}
             alt=""
             fill={true}
-            className="imgage"
+            className="scaling_img"
             style={{ filter: 'grayscale(50%)' }}
           />
         </div>

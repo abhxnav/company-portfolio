@@ -22,7 +22,7 @@ export default function Home() {
         <Image
           src={data.home.banner}
           alt="banner"
-          className="w-full h-128 object-cover"
+          className="w-full h-128 object-cover bouncing_img"
         ></Image>
       </div>
     </div>
