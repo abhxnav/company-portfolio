@@ -1,6 +1,7 @@
 import Image from 'next/image'
-import BannerGif from '../../public/assets/images/BannerGif.gif'
 import { Roboto } from 'next/font/google'
+import { data } from '@/utils/data'
+import Button from '@/components/button/Button'
 
 const roboto = Roboto({ subsets: ['latin'], weight: ['900'] })
 
@@ -12,19 +13,14 @@ export default function Home() {
           id="company-tagline"
           className={`text-7xl font-bold ${roboto.className}`}
         >
-          Company Tagline Lorem, ipsum dolor.
+          {data.home.companyTagline}
         </h1>
-        <p className="text-2xl font-light ">
-          Company description Lorem ipsum dolor sit amet consectetur adipisicing
-          elit.
-        </p>
-        <button className="p-5 cursor-pointer bg-accent text-text_dark font-bold border-none rounded-lg w-max">
-          See what we do
-        </button>
+        <p className="text-2xl font-light ">{data.home.comapnyDesc}</p>
+        <Button url="/portfolio" text="See what we do" />
       </div>
       <div className="flex-1 mb-7">
         <Image
-          src={BannerGif}
+          src={data.home.banner}
           alt="banner"
           className="w-full h-128 object-cover"
         ></Image>

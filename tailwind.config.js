@@ -17,7 +17,8 @@ module.exports = {
       },
       colors: {
         background: '#111',
-        accent: 'rgb(253, 186, 116)',
+        accent_primary: '#6b59a2',
+        accent_secondary: '#dcbcff',
         text_dark: 'rgb(17, 24, 39)',
       },
     },

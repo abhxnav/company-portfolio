@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="flex items-center justify-between h-12 text-sm">
       <div>Footer</div>
       <div className="flex items-center gap-3">
-        {data.socialAccounts.map((acc) => (
+        {data.home.socialAccounts.map((acc) => (
           <Link className="cursor-pointer" href={acc.url}>
             {acc.icon}
           </Link>
