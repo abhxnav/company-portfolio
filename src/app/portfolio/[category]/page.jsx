@@ -1,14 +1,21 @@
+'use client'
+
 import Button from '@/components/button/Button'
 import Image from 'next/image'
-import React from 'react'
+import React, { useContext } from 'react'
 import { data } from '@/utils/data'
+import { ThemeContext } from '@/context/ThemeContext'
 
 const Category = ({ params }) => {
-  console.log(params)
+  const { mode } = useContext(ThemeContext)
   return (
     <div>
-      <h1 className="text-accent_secondary font-semibold text-4xl">
-        {params.category}
+      <h1
+        className={`font-semibold text-4xl ${
+          mode === 'light' ? 'text-accent_primary' : 'text-accent_secondary'
+        }`}
+      >
+        {params.category.charAt(0).toUpperCase() + params.category.slice(1)}
       </h1>
       {data.portfolio.map((project) => (
         <div className="portfolio-items flex gap-12 mt-12 mb-24">

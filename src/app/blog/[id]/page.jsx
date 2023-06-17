@@ -13,7 +13,7 @@ const BlogPost = () => {
               src={data.blog.author.avatar}
               width={40}
               height={40}
-              className="rounded-full"
+              className="circle"
             />
             <span className="username">{data.blog.author.name}</span>
           </div>

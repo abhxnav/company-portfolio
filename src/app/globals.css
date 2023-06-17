@@ -96,3 +96,17 @@ a {
 .portfolio-items:nth-child(2n + 1) {
   flex-direction: row-reverse;
 }
+
+.theme {
+  transition: 1s all ease;
+}
+
+.light {
+  background: var(--text-lighter) !important;
+  color: var(--background) !important;
+}
+
+.dark {
+  background: var(--background) !important;
+  color: var(--text-light) !important;
+}

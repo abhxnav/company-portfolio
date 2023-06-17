@@ -8,9 +8,7 @@ import Image from 'next/image'
 const Portfoio = () => {
   return (
     <div className="">
-      <h1 className="my-5 mx-0 text-text_light text-3xl font-bold">
-        Choose a Gallery
-      </h1>
+      <h1 className="my-5 mx-0 text-3xl font-bold">Choose a Gallery</h1>
       <div className="flex gap-12">
         <Link
           href="/portfolio/websites"
