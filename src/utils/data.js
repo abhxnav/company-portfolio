@@ -9,6 +9,7 @@ import HomeBanner from '../../public/assets/images/BannerGif6-unscreen.gif'
 import AboutBanner from '../../public/assets/images/about-banner.jpg'
 import ContactBanner from '../../public/assets/images/contact.png'
 import PortfolioImage from '../../public/assets/images/portfolio-image.png'
+import BlogImage from '../../public/assets/images/blog-image.jpg'
 
 export const data = {
   // HOME PAGE
@@ -220,6 +221,36 @@ export const data = {
           url: '#',
         },
       ],
+    },
+  ],
+
+  // BLOG
+
+  blogs: [
+    {
+      image: BlogImage,
+      title: 'Lorem ipsum dolor sit',
+      desc: 'cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!',
+    },
+    {
+      image: BlogImage,
+      title: 'Lorem ipsum dolor sit',
+      desc: 'cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!',
+    },
+    {
+      image: BlogImage,
+      title: 'Lorem ipsum dolor sit',
+      desc: 'cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!',
+    },
+    {
+      image: BlogImage,
+      title: 'Lorem ipsum dolor sit',
+      desc: 'cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!',
+    },
+    {
+      image: BlogImage,
+      title: 'Lorem ipsum dolor sit',
+      desc: 'cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!',
     },
   ],
 }
