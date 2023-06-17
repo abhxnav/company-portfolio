@@ -253,4 +253,18 @@ export const data = {
       desc: 'cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!',
     },
   ],
+
+  // SINGLE BLOG POST
+
+  blog: {
+    id: '',
+    image: BlogImage,
+    title: 'Lorem ipsum dolor sit amet.',
+    desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro eius tempore hic facere, dolores illo quas culpa nulla minima blanditiis ut maiores voluptas corporis iusto consectetur nam, cupiditate eligendi sit.',
+    author: {
+      name: 'John Doe',
+      avatar: BlogImage,
+    },
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem suscipit impedit necessitatibus velit dolore nihil. Veniam non tenetur sit. Tempora error earum odit velit reprehenderit mollitia quis magni ipsum, doloremque molestiae maiores nam distinctio alias ut deserunt adipisci ex inventore, aspernatur dolorem aliquid! Totam nam fugit a aliquam delectus dignissimos nulla voluptates corrupti debitis cum numquam consequatur error perspiciatis, culpa molestias, commodi ducimus explicabo veniam! Iste beatae deleniti ut. Pariatur blanditiis voluptatibus nobis ipsum tempore autem consectetur nulla a dolore, neque enim assumenda sed maiores ab, nisi minima numquam velit quas id magnam doloribus! Dolor, laudantium! Tempora, nobis enim.',
+  },
 }
