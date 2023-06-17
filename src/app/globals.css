@@ -92,3 +92,7 @@ a {
 .smooth-transition {
   transition: all 0.4s ease;
 }
+
+.portfolio-items:nth-child(2n + 1) {
+  flex-direction: row-reverse;
+}

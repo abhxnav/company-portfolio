@@ -8,6 +8,7 @@ import {
 import HomeBanner from '../../public/assets/images/BannerGif6-unscreen.gif'
 import AboutBanner from '../../public/assets/images/about-banner.jpg'
 import ContactBanner from '../../public/assets/images/contact.png'
+import PortfolioImage from '../../public/assets/images/portfolio-image.png'
 
 export const data = {
   // HOME PAGE
@@ -121,4 +122,104 @@ export const data = {
     banner: ContactBanner,
     title: 'Ping Us!',
   },
+
+  // PORTFOLIO
+
+  portfolio: [
+    {
+      image: PortfolioImage,
+      title: 'Lorem ipsum dolor sit',
+      desc: 'cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!',
+      actionButtons: [
+        {
+          text: 'See more',
+          url: '#',
+        },
+        {
+          text: 'Github',
+          url: '#',
+        },
+        {
+          text: 'Live website',
+          url: '#',
+        },
+      ],
+    },
+    {
+      image: PortfolioImage,
+      title: 'Lorem ipsum dolor sit',
+      desc: 'cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!',
+      actionButtons: [
+        {
+          text: 'See more',
+          url: '#',
+        },
+        {
+          text: 'Github',
+          url: '#',
+        },
+        {
+          text: 'Live website',
+          url: '#',
+        },
+      ],
+    },
+    {
+      image: PortfolioImage,
+      title: 'Lorem ipsum dolor sit',
+      desc: 'cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!',
+      actionButtons: [
+        {
+          text: 'See more',
+          url: '#',
+        },
+        {
+          text: 'Github',
+          url: '#',
+        },
+        {
+          text: 'Live website',
+          url: '#',
+        },
+      ],
+    },
+    {
+      image: PortfolioImage,
+      title: 'Lorem ipsum dolor sit',
+      desc: 'cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!',
+      actionButtons: [
+        {
+          text: 'See more',
+          url: '#',
+        },
+        {
+          text: 'Github',
+          url: '#',
+        },
+        {
+          text: 'Live website',
+          url: '#',
+        },
+      ],
+    },
+    {
+      image: PortfolioImage,
+      title: 'Lorem ipsum dolor sit',
+      desc: 'cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!cumque expedita inventore ratione facere optio? Consequuntur nisi in laboriosam quo, libero, veritatis atque minus cum beatae dolor inventore autem sequi velit dolores molestiae quas! Voluptate, at!',
+      actionButtons: [
+        {
+          text: 'See more',
+          url: '#',
+        },
+        {
+          text: 'Github',
+          url: '#',
+        },
+        {
+          text: 'Live website',
+          url: '#',
+        },
+      ],
+    },
+  ],
 }

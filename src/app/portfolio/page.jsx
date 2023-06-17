@@ -13,7 +13,7 @@ const Portfoio = () => {
       </h1>
       <div className="flex gap-12">
         <Link
-          href="/portfolio/sebsites"
+          href="/portfolio/websites"
           className="border-4 border-gray-300 w-80 h-[25rem] relative cursor-pointer"
         >
           <Image src={web} fill className="opacity-80" />
@@ -22,7 +22,7 @@ const Portfoio = () => {
           </div>
         </Link>
         <Link
-          href="/portfolio/application"
+          href="/portfolio/applications"
           className="border-4 border-gray-300 w-80 h-[25rem] relative cursor-pointer"
         >
           <Image src={app} fill className="opacity-80" />
