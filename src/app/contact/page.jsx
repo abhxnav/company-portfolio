@@ -1,17 +1,17 @@
 import Button from '@/components/button/Button'
 import Image from 'next/image'
-import banner from '../../../public/assets/images/contact.png'
+import { data } from '@/utils/data'
 
 const Contact = () => {
   return (
     <div className="conatiner">
-      <h1 className="text-6xl text-center mb-24 text-gray-300 font-bold">
-        Ping Us!
+      <h1 className="text-6xl text-center mb-24 text-text_light font-bold">
+        {data.contact.title}
       </h1>
       <div className="flex items-center gap-24">
         <div className="flex-1 relative h-128 scale-125 mr-10">
           <Image
-            src={banner}
+            src={data.contact.banner}
             alt=""
             fill={true}
             className="scaling_img"
@@ -22,15 +22,15 @@ const Contact = () => {
           <input
             type="text"
             placeholder="name"
-            className="p-5 bg-transparent outline-none text-gray-300 border-2 border-gray-300 text-xl font-bold"
+            className="p-5 bg-transparent outline-none text-text_light border-2 border-gray-300 text-xl font-bold"
           />
           <input
             type="text"
             placeholder="email"
-            className="p-5 bg-transparent outline-none text-gray-300 border-2 border-gray-300 text-xl font-bold"
+            className="p-5 bg-transparent outline-none text-text_light border-2 border-gray-300 text-xl font-bold"
           />
           <textarea
-            className="p-5 bg-transparent outline-none text-gray-300 border-2 border-gray-300 text-xl font-bold"
+            className="p-5 bg-transparent outline-none text-text_light border-2 border-gray-300 text-xl font-bold"
             placeholder="message"
             cols="30"
             rows="10"

@@ -16,21 +16,21 @@ const About = () => {
       </div>
       <div className="flex gap-24 mb-10">
         <div className="flex flex-col flex-1 mt-12 gap-8">
-          <h1 className="text-4xl font-extrabold text-gray-300">
+          <h1 className="text-4xl font-extrabold text-text_light">
             {data.about.col1.title}
           </h1>
           {data.about.col1.content.map((para) => (
-            <p className="text-lg font-light text-justify text-gray-300">
+            <p className="text-lg font-light text-justify text-text_light">
               {para.para}
             </p>
           ))}
         </div>
         <div className="flex flex-col flex-1 mt-12 gap-8">
-          <h1 className="text-4xl font-extrabold text-gray-300">
+          <h1 className="text-4xl font-extrabold text-text_light">
             {data.about.col2.title}
           </h1>
           {data.about.col2.content.map((para) => (
-            <p className="text-lg font-light text-justify text-gray-300">
+            <p className="text-lg font-light text-justify text-text_light">
               {para.para}
             </p>
           ))}

@@ -9,10 +9,7 @@ export default function Home() {
   return (
     <div className="flex items-center gap-24">
       <div className="flex flex-1 flex-col gap-12">
-        <h1
-          id="company-tagline"
-          className={`text-7xl font-bold ${roboto.className}`}
-        >
+        <h1 className={`text-7xl font-bold gradient ${roboto.className}`}>
           {data.home.companyTagline}
         </h1>
         <p className="text-2xl font-light ">{data.home.comapnyDesc}</p>

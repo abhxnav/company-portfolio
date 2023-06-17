@@ -7,6 +7,7 @@ import {
 } from 'react-icons/bs'
 import HomeBanner from '../../public/assets/images/BannerGif6-unscreen.gif'
 import AboutBanner from '../../public/assets/images/about-banner.jpg'
+import ContactBanner from '../../public/assets/images/contact.png'
 
 export const data = {
   // HOME PAGE
@@ -112,5 +113,12 @@ export const data = {
         },
       ],
     },
+  },
+
+  // CONTACT
+
+  contact: {
+    banner: ContactBanner,
+    title: 'Ping Us!',
   },
 }

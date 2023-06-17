@@ -10,7 +10,8 @@
   --accent-primary: #6b59a2;
   --accent-secondary: #dcbcff;
   --text-dark: rgb(17, 24, 39);
-  --text-light: white;
+  --text-light: #bbb;
+  --text-lighter: white;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,7 +51,7 @@ a {
   justify-content: space-between;
 }
 
-#company-tagline {
+.gradient {
   background: linear-gradient(
     to bottom,
     var(--accent-primary),
@@ -74,7 +75,7 @@ a {
     transform: translateY(-15px);
   }
   to {
-    transform: translateY(0px) scale(1.1);
+    transform: translateY(0px) scale(1.05);
   }
 }
 
@@ -85,5 +86,9 @@ a {
 
 .scaling_img {
   object-fit: contain;
-  animation: scale 2s infinite ease alternate;
+  animation: scale 3s infinite ease alternate;
+}
+
+.smooth-transition {
+  transition: all 0.4s ease;
 }
