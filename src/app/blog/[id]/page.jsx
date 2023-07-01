@@ -1,7 +1,18 @@
 import Image from 'next/image'
 import { data } from '@/utils/data'
 
-const BlogPost = () => {
+// const getData = async (id) => {
+//   const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
+//     cache: 'no-store',
+//   })
+//   if (!res.ok) {
+//     return notFound()
+//   }
+//   return res.json()
+// }
+
+const BlogPost = async ({ params }) => {
+  // const data = await getData(params.id)
   return (
     <div>
       <div className="flex">
