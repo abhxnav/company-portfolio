@@ -5,9 +5,12 @@ import { data } from '@/utils/data'
 import Link from 'next/link'
 import ThemeToggle from '../themeToggle/ThemeToggle'
 import { ThemeContext } from '@/context/ThemeContext'
+import { signOut, useSession } from 'next-auth/react'
 
 const Navbar = () => {
   const { mode } = useContext(ThemeContext)
+  const session = useSession()
+
   return (
     <div className="flex justify-between items-center h-24">
       <Link
@@ -25,15 +28,18 @@ const Navbar = () => {
             {link.title}
           </Link>
         ))}
-        <button
-          className={`py-1.5 px-2 border-none font-medium cursor-pointer rounded-md ${
-            mode === 'light'
-              ? 'bg-accent_primary text-white'
-              : 'bg-accent_secondary text-text_dark'
-          }`}
-        >
-          Logout
-        </button>
+        {session.status === 'authenticated' && (
+          <button
+            className={`py-1.5 px-2 border-none font-medium cursor-pointer rounded-md ${
+              mode === 'light'
+                ? 'bg-accent_primary text-white'
+                : 'bg-accent_secondary text-text_dark'
+            }`}
+            onClick={signOut}
+          >
+            Logout
+          </button>
+        )}
       </div>
     </div>
   )
