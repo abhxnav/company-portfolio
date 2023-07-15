@@ -15,7 +15,7 @@ const Dashboard = () => {
   const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
   const { data, mutate, error, isLoading } = useSWR(
-    `/api/posts?username=${session?.data?.user.name}`,
+    `/api/posts?username=${session?.data?.user?.name}`,
     fetcher
   )
 
@@ -42,7 +42,7 @@ const Dashboard = () => {
           desc,
           img,
           content,
-          username: session.data.user.name,
+          username: session?.data?.user?.name,
         }),
       })
     } catch (error) {
@@ -59,17 +59,17 @@ const Dashboard = () => {
             : data?.map((post) => (
                 <div
                   className="flex items-center justify-between my-12"
-                  key={post._id}
+                  key={post?._id}
                 >
                   <div className="w-52 h-28 relative">
                     <Image
                       className="object-cover"
-                      src={post.img}
+                      src={post?.img}
                       width={200}
                       height={100}
                     />
                   </div>
-                  <h2 className="postTitle">{post.title}</h2>
+                  <h2 className="postTitle">{post?.title}</h2>
                   <span className="cursor-pointer text-red-400">X</span>
                 </div>
               ))}

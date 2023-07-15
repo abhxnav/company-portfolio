@@ -19,13 +19,13 @@ const Navbar = () => {
           mode === 'light' ? 'text-accent_primary' : 'text-accent_secondary'
         }`}
       >
-        {data.home.companyName}
+        {data?.home?.companyName}
       </Link>
       <div className="flex items-center gap-5">
         <ThemeToggle />
-        {data.home.navbarLinks.map((link) => (
-          <Link href={link.url} key={link.id}>
-            {link.title}
+        {data?.home?.navbarLinks?.map((link) => (
+          <Link href={link?.url} key={link?.id}>
+            {link?.title}
           </Link>
         ))}
         {session.status === 'authenticated' && (

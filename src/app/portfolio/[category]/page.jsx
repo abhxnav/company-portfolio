@@ -17,19 +17,19 @@ const Category = ({ params }) => {
       >
         {params.category.charAt(0).toUpperCase() + params.category.slice(1)}
       </h1>
-      {data.portfolio.map((project) => (
-        <div className="portfolio-items flex gap-12 mt-12 mb-24">
+      {data?.portfolio?.map((project, idx) => (
+        <div className="portfolio-items flex gap-12 mt-12 mb-24" key={idx}>
           <div className="flex-1 flex flex-col gap-5 justify-center">
-            <h1 className="text-5xl font-semibold">{project.title}</h1>
-            <p className="text-xl">{project.desc}</p>
+            <h1 className="text-5xl font-semibold">{project?.title}</h1>
+            <p className="text-xl">{project?.desc}</p>
             <div className="flex flex-nowrap gap-2">
-              {project.actionButtons.map((button) => (
-                <Button text={button.text} url={button.url} />
+              {project?.actionButtons?.map((button, idx) => (
+                <Button text={button?.text} url={button?.url} key={idx} />
               ))}
             </div>
           </div>
           <div className="imgContainer flex-1 h-128 relative">
-            <Image fill={true} src={project.image} />
+            <Image fill={true} src={project?.image} />
           </div>
         </div>
       ))}

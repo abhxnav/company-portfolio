@@ -8,7 +8,7 @@ const About = () => {
     <div className="">
       <div className="w-full h-80 relative ">
         <Image
-          src={data.about.banner}
+          src={data?.about?.banner}
           fill={true}
           alt=""
           className="object-cover"
@@ -16,15 +16,23 @@ const About = () => {
       </div>
       <div className="flex gap-24 mb-10">
         <div className="flex flex-col flex-1 mt-12 gap-8">
-          <h1 className="text-4xl font-extrabold">{data.about.col1.title}</h1>
-          {data.about.col1.content.map((para) => (
-            <p className="text-lg font-light text-justify">{para.para}</p>
+          <h1 className="text-4xl font-extrabold">
+            {data?.about?.col1?.title}
+          </h1>
+          {data?.about?.col1?.content?.map((para, idx) => (
+            <p className="text-lg font-light text-justify" key={idx}>
+              {para?.para}
+            </p>
           ))}
         </div>
         <div className="flex flex-col flex-1 mt-12 gap-8">
-          <h1 className="text-4xl font-extrabold">{data.about.col2.title}</h1>
-          {data.about.col2.content.map((para) => (
-            <p className="text-lg font-light text-justify">{para.para}</p>
+          <h1 className="text-4xl font-extrabold">
+            {data?.about?.col2?.title}
+          </h1>
+          {data?.about?.col2?.content?.map((para, idx) => (
+            <p className="text-lg font-light text-justify" key={idx}>
+              {para?.para}
+            </p>
           ))}
           <Button url="/contact" text="Contact Us" />
         </div>

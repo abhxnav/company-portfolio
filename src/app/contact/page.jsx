@@ -15,12 +15,12 @@ const Contact = () => {
           mode === 'light' ? 'text-accent_primary' : 'text-accent_secondary'
         }`}
       >
-        {data.contact.title}
+        {data?.contact?.title}
       </h1>
       <div className="flex items-center gap-24">
         <div className="flex-1 relative h-128 scale-125 mr-10">
           <Image
-            src={data.contact.banner}
+            src={data?.contact?.banner}
             alt=""
             fill={true}
             className="scaling_img"
